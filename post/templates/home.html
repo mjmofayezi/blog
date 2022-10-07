@@ -1,0 +1,12 @@
+<ul>
+    {% for post in object_list %}
+    <a href="{{ post.get_absolute_url }}"><h2>{{ post.title }}</h2></a>
+      <img src="{{ post.image.url}}" alt="{{ post.title }}" height="200" width="200">
+      <p>
+        {{ post.date }}//
+        {{ post.auther }}
+      </p>
+    {% endfor %}
+</ul>
+<hr>
+<center><a href="">contact us</a>:</center>
